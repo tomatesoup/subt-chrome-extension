@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+
+	"name": "Subtitle My Video",
+	"description": "This extension will add subtitles to videos in the browser",
+	"version": "1.0",
+	"browser_action": {
+		"default_title": "Add subtitles to the page",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"activeTab",
+		"http://*/*", 
+		"https://*/*"
+	]
+}
