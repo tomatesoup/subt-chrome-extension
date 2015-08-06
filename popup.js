@@ -16,9 +16,21 @@ $('#search-form').on('submit', function(event) {
 
 			list.append(element)
 		})
+
 		$('#subtitle-container').html(list)
 		$('#subtitle-container').on('click', 'li', function(event) {
 			event.preventDefault()
+
+			var subtitleId = $(event.target).attr('data-id')
+			var subtitleRequest = $.get(`http://localhost:3000/subtitles/${subtitleId}.json`)
+
+			subtitleRequest.done(function(data) {
+				chrome.tabs.getSelected(null, function(tab) {
+					chrome.tabs.sendMessage(tab.id, { subtitle: JSON.stringify(data) })
+				})
+			})
+			// $('video').attr('class', 'video')
+			// $('video').html('<p>I am writing text in the video</p>')
 			// $(event.target).hide()
 		})	
 	})

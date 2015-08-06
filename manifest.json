@@ -8,6 +8,12 @@
 		"default_title": "Add subtitles to the page",
 		"default_popup": "popup.html"
 	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery-1.11.3.min.js", "content.js"]
+		}
+	],
 	"permissions": [
 		"activeTab",
 		"http://*/*", 
