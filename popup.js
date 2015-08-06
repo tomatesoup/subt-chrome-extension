@@ -29,14 +29,9 @@ $('#search-form').on('submit', function(event) {
 					chrome.tabs.sendMessage(tab.id, { subtitle: JSON.stringify(data) })
 				})
 			})
-			// $('video').attr('class', 'video')
-			// $('video').html('<p>I am writing text in the video</p>')
-			// $(event.target).hide()
 		})	
 	})
-		// .done()
-		// .fail()
-	})
+})
 
 
 
