@@ -1,0 +1,65 @@
+body {
+	font-family: sans-serif;
+	background-color: white;
+	color: black;
+}
+
+#widget {
+	background-color: #303030;
+}
+
+.container {
+	height: 30rem;
+	width: 30rem;
+	margin: auto;
+}
+
+#search-form {
+	margin-top: 10px;
+}
+
+#search-box {
+	background-color: white;
+	border: none;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+
+#check-titles {
+	color: white;
+	background-color: #0CE3AC;
+	border: none;
+	font-size: 16px;
+	margin-top: 15px;
+	padding: 10px 15px;
+}
+
+#subtitle-container {
+	margin: 15px auto 0 auto;
+	text-align: center;
+	font-size: 15px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin-top: 5px;
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+	cursor: pointer;
+}
+
+li:hover {
+	color: white;
+	background-color: #0CE3AC;
+}
+
+#widget {
+	text-align: center;
+	padding: 0;
+}

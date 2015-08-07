@@ -1,5 +1,5 @@
 chrome.extension.onMessage.addListener(function(request) {
-	
+
 	var subtitles = JSON.parse(request.subtitle)
 
 	var video = document.getElementsByTagName("video")[0]
