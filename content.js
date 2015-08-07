@@ -6,17 +6,17 @@ chrome.extension.onMessage.addListener(function(request) {
 
 	var subtitlesContainer = $('<div>')
 	subtitlesContainer.css({
-		position: 'absolute', 
-		'background-color': 'black', 
-		left: 0, 
-		right: 0, 
-		bottom: 50, 
-		'z-index': 35, 
-		'text-align': 'center', 
-		'max-width': '60%', 
+		position: 'absolute',
+		backgroundColor: 'black',
+		left: 0,
+		right: 0,
+		bottom: 50,
+		zIndex: 35,
+		textAlign: 'center',
+		maxWidth: '60%',
 		margin: '0 auto',
-		'font-size': '21',
-		'color': 'white'
+		fontSize: 21,
+		color: 'white'
 	})
 
 	$('.html5-video-content').append(subtitlesContainer)
