@@ -1,0 +1,16 @@
+{
+  "browser": true,
+  "esnext": true,
+  "undef": true,
+  "unused": true,
+  "noarg": true,
+  "trailing": true,
+  "indent": 2,
+  "quotmark": "single",
+  "eqeqeq": true,
+  "noempty": true,
+  "globals": {
+    "$": true,
+    "chrome": true
+  }
+}
